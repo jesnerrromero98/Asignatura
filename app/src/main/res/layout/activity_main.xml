@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="true"
+    android:animationCache="false"
+    android:background="#3F51B5"
+    android:backgroundTint="#303F9F"
+    android:foregroundTint="#8D99DF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#536DFE"
+        android:fontFamily="sans-serif-black"
+        android:foregroundTint="#FFFFFF"
+        android:freezesText="false"
+        android:onClick="Guardar_OnClick"
+        android:text="GUARDAR"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/editTextAsignatura"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAsignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#3F51B5"
+        android:breakStrategy="simple"
+        android:bufferType="normal"
+        android:ems="10"
+        android:hint="Agregar Asignatura"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#ffffff"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#448AFF"
+        android:textColorLink="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="410dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="204dp"
+        android:background="#FFFFFF"
+        android:foregroundTint="#5BDBDFFA"
+        android:scrollbars="horizontal|vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAsignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:text="Mis Asignatura"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
